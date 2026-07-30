@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://probitygrc.com/sitemap.xml
+Sitemap: https://www.probitygrc.com/sitemap.xml
