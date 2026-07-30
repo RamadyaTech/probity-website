@@ -69,7 +69,7 @@ sub-processor list does not grow.
    Onboard Domain). Cloudflare adds the MX/TXT records for you. Requires Cloudflare DNS.
 2. Add your real inbox as a **Destination Address** and click the verification link.
    Sends to verified destination addresses on your own account are **free**.
-3. Edit `cloudflare/mailer-worker/wrangler.toml` and set `destination_address` to that
+3. Edit `cloudflare/mailer-worker/wrangler.jsonc` and set `destination_address` to that
    verified inbox, then deploy:
    ```bash
    cd cloudflare/mailer-worker
@@ -158,13 +158,20 @@ curl -X POST http://localhost:8788/api/contact \
 # → {"ok":true}
 ```
 
-Put local secrets in a `.dev.vars` file next to `wrangler.toml` (already gitignored).
+Put local secrets in a `.dev.vars` file at the project root (already gitignored).
+
+> **No root Wrangler config is included.** Set the D1 binding, the `MAILER`
+> service binding and the environment variables in the Cloudflare dashboard
+> (Pages project → Settings → Bindings / Variables and Secrets). That is the
+> supported route and needs no config file in the repo. If you later want one
+> for local development, `wrangler.jsonc` works and avoids `.toml` entirely.
 
 ---
 
 ## A note on the sub-processor list
 
-You removed the public sub-processors page, and your DPA now says the list is available to
-customers on request. Keep that list current: **Option A adds nothing to it** (Cloudflare is
-already your host); **Option B adds one named processor** — Brevo, Zoho or Resend — which
-should be recorded along with what data it handles and where it is stored.
+The public sub-processors page has been removed, and the contact page states that security
+and legal documentation is available to prospective customers on request. Keep that list
+current internally: **Option A adds nothing to it** (Cloudflare already hosts the site);
+**Option B adds one named processor** — Brevo, Zoho or Resend — which should be recorded
+along with what data it handles and where it is stored.
