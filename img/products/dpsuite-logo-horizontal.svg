@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" width="420" height="110">
+  <g transform="translate(4,19)"><path d="M14 20 H40 A28 28 0 0 1 40 76 H14 Z" fill="none" stroke="#1B3A6B" stroke-width="9" stroke-linejoin="round"></path><path d="M50 20 H70 A18 18 0 0 1 70 56 H50" fill="none" stroke="#6FAE2E" stroke-width="9" stroke-linejoin="round"></path><line x1="50" y1="20" x2="50" y2="80" stroke="#6FAE2E" stroke-width="9" stroke-linecap="round"></line></g>
+  <text x="112" y="52" font-family="&#39;Plus Jakarta Sans&#39;,&#39;Segoe UI&#39;,sans-serif" font-weight="800" font-size="46" letter-spacing="-1.5" fill="#1B3A6B">DPSuite</text>
+  <text x="114" y="78" font-family="&#39;Plus Jakarta Sans&#39;,&#39;Segoe UI&#39;,sans-serif" font-weight="700" font-size="13" letter-spacing="2" fill="#64748B">DPDP ACT COMPLIANCE</text>
+</svg>

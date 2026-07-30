@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 100 100" role="img" aria-label="Probity">
+  <rect width="100" height="100" rx="26" fill="#16357E"></rect>
+  
+  <path d="M42.5 19 H54 a15.5 15.5 0 0 1 0 31 H42.5 Z" fill="#FFFFFF"></path>
+  <path d="M42.5 26.5 H53 a8 8 0 0 1 0 16 H42.5 Z" fill="#16357E"></path>
+  
+  <rect x="34" y="19" width="8.5" height="46" rx="4.25" fill="#8DC63F"></rect>
+  
+  <path d="M38.25 63 L47.4 73 L38.25 89 L29.1 73 Z" fill="#8DC63F"></path>
+  <path d="M38.25 63 L38.25 89 L29.1 73 Z" fill="#6FA82D"></path>
+</svg>

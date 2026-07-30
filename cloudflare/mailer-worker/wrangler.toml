@@ -1,0 +1,11 @@
+name = "probity-mailer"
+main = "index.js"
+compatibility_date = "2026-07-01"
+
+# Cloudflare Email Service send binding.
+# Locking destination_address to your verified inbox is the safest setup:
+# the Worker then physically cannot send anywhere else, even if compromised.
+# Sends to verified destination addresses on your own account are free.
+[[send_email]]
+name = "EMAIL"
+destination_address = "REPLACE_WITH_YOUR_VERIFIED_INBOX@example.com"

@@ -1,0 +1,27 @@
+# Cloudflare Pages configuration.
+# Bindings can also be set in the dashboard (Settings → Bindings) — that is the
+# simplest route. This file is here so `wrangler pages dev` works locally and so
+# the intended bindings are documented in version control. See DEPLOY.md.
+
+name = "probity-website"
+pages_build_output_dir = "."
+compatibility_date = "2026-07-01"
+
+# Lead storage. Create with:  npx wrangler d1 create probity-leads
+# then paste the returned database_id below.
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "probity-leads"
+# database_id = "PASTE_YOUR_DATABASE_ID_HERE"
+
+# Service binding to the mailer Worker (see cloudflare/mailer-worker).
+# [[services]]
+# binding = "MAILER"
+# service = "probity-mailer"
+
+[vars]
+SALES_EMAIL = "sales@probitygrc.com"
+FROM_EMAIL  = "website@probitygrc.com"
+
+# Secrets (TURNSTILE_SECRET_KEY, BREVO_API_KEY, ...) must NOT go here.
+# Set them in the dashboard as encrypted variables, or in .dev.vars locally.
